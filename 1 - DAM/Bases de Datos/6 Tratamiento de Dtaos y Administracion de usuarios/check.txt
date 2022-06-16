@@ -1,0 +1,45 @@
+1- Elimine la tabla:
+
+  drop table empleados;
+
+2- Créela con la siguiente estructura:
+
+ create table empleados (
+  documento char(8),
+  nombre varchar2(30),
+  cantidadhijos number(2),
+  seccion varchar2(20),
+  sueldo number(6,2) default -1
+ );
+
+3- Agregue una restricción "check" para asegurarse que no se ingresen valores negativos para el sueldo.
+
+4- Intente ingresar un registro con la palabra clave "default" en el campo "sueldo"
+
+5- Ingrese algunos registros válidos:
+
+ insert into empleados values ('22222222','Alberto Lopez',1,'Sistemas',1000);
+ insert into empleados values ('33333333','Beatriz Garcia',2,'Administracion',3000);
+ insert into empleados values ('34444444','Carlos Caseres',0,'Contaduría',6000);
+
+6- Intente agregar otra restricción "check" al campo sueldo para asegurar que ninguno supere el valor 5000.
+
+7- Elimine el registro infractor y vuelva a crear la restricción
+
+8- Establezca una restricción "check" para "seccion" que permita solamente los valores "Sistemas", "Administracion" y "Contaduría".
+
+9- Ingrese un registro con valor "null" en el campo "seccion".
+
+10- Establezca una restricción "check" para "cantidadhijos" que permita solamente valores entre 0 y 15.
+
+13- Intente modificar un registro colocando en "cantidadhijos" el valor "21".
+
+14- Intente modificar el valor de algún registro en el campo "seccion" cambiándolo por uno que no esté incluido en la lista de permitidos.
+
+15- Intente agregar una restricción al campo sección para aceptar solamente valores que comiencen con la letra "B".
+
+16- Agregue un registro con documento nulo.
+
+17- Intente agregar una restricción "primary key" para el campo "documento".
+
+18- Elimine el registro que infringe la restricción y establezca la restricción del punto 17.

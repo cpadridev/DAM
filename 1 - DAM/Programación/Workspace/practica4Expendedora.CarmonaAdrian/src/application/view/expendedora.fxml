@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="996.0" style="-fx-background-color: lightblue; -fx-border-color: blue; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ExpendedoraController">
+	<left>
+		<GridPane alignment="CENTER" prefHeight="512.0" prefWidth="525.0" BorderPane.alignment="CENTER">
+			<columnConstraints>
+				<ColumnConstraints halignment="CENTER" maxWidth="269.0" minWidth="248.0" prefWidth="263.0" />
+				<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="277.0" minWidth="256.0" prefWidth="262.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<BorderPane.margin>
+				<Insets bottom="50.0" left="50.0" top="50.0" />
+			</BorderPane.margin>
+			<children>
+				<VBox alignment="CENTER" maxWidth="447.0" prefHeight="133.0" prefWidth="447.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+					<children>
+						<Pane prefHeight="78.0" prefWidth="331.0" style="-fx-background-radius: 5; -fx-background-color: black;">
+							<children>
+								<TextField fx:id="txtSalidaProducto" alignment="CENTER" editable="false" layoutX="24.0" layoutY="14.0" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: none; -fx-text-fill: white;">
+									<font>
+										<Font size="23.0" />
+									</font>
+								</TextField>
+							</children>
+						</Pane>
+					</children>
+				</VBox>
+				<Button fx:id="btnPro1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnPro1OnAction" prefHeight="130.0" prefWidth="200.0" stylesheets="@styles.css" textAlignment="RIGHT" textFill="WHITE">
+					<graphic>
+						<ImageView fitHeight="120.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../archives/Chocolate.jpg" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Button>
+				<Button fx:id="btnPro2" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnPro2OnAction" prefHeight="130.0" prefWidth="200.0" stylesheets="@styles.css" textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="1">
+					<graphic>
+						<ImageView fitHeight="120.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../archives/Cola.jpg" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Button>
+				<Button fx:id="btnPro3" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnPro3OnAction" prefHeight="130.0" prefWidth="200.0" stylesheets="@styles.css" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="1">
+					<graphic>
+						<ImageView fitHeight="120.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../archives/Papas.jpg" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Button>
+				<Button fx:id="btnPro4" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnPro4OnAction" prefHeight="130.0" prefWidth="200.0" stylesheets="@styles.css" textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+					<graphic>
+						<ImageView fitHeight="120.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../archives/Nachos.jpg" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Button>
+				<Button fx:id="btnPro5" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnPro5OnAction" prefHeight="130.0" prefWidth="200.0" stylesheets="@styles.css" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="2">
+					<graphic>
+						<ImageView fitHeight="120.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../archives/Sandwich.jpg" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Button>
+				<Button fx:id="btnPro6" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnPro6OnAction" prefHeight="130.0" prefWidth="200.0" stylesheets="@styles.css" textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+					<graphic>
+						<ImageView fitHeight="120.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../archives/Zumo.jpg" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+					<effect>
+						<ColorAdjust />
+					</effect>
+				</Button>
+			</children>
+		</GridPane>
+	</left>
+	<top>
+		<Pane prefHeight="55.0" prefWidth="596.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="3.0" prefHeight="50.0" prefWidth="587.0" text="MAQUINA EXPENDEDORA" textAlignment="CENTER">
+					<font>
+						<Font name="Ebrima" size="29.0" />
+					</font>
+				</Label>
+				<Label alignment="CENTER" contentDisplay="CENTER" layoutX="659.0" layoutY="14.0" prefHeight="28.0" prefWidth="530.0" text="(INCLUYE SONIDOS)" textAlignment="CENTER">
+					<font>
+						<Font name="Ebrima" size="10.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+	</top>
+	<right>
+		<GridPane prefHeight="600.0" prefWidth="300.0" style="-fx-border-color: blue; -fx-border-radius: 5; -fx-border-width: 6;" BorderPane.alignment="CENTER">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<BorderPane.margin>
+				<Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+			</BorderPane.margin>
+			<children>
+				<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+					<children>
+						<TextField fx:id="txtCredito" editable="false" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: none;">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</TextField>
+						<TextField fx:id="txtCambioDisponible" editable="false" style="-fx-background-color: none;">
+							<VBox.margin>
+								<Insets bottom="20.0" top="20.0" />
+							</VBox.margin>
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</TextField>
+						<TextField fx:id="txtImporteVentas" editable="false" style="-fx-background-color: none;">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</TextField>
+					</children>
+				</VBox>
+				<GridPane alignment="CENTER" prefHeight="216.0" prefWidth="250.0" GridPane.rowIndex="1">
+					<columnConstraints>
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="35.0" valignment="CENTER" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" valignment="CENTER" vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Button id="btn" fx:id="btn2e" mnemonicParsing="false" onAction="#btn2eOnAction" prefHeight="30.0" prefWidth="50.0" text="2 €">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+						</Button>
+						<Button fx:id="btn1e" mnemonicParsing="false" onAction="#btn1eOnAction" prefHeight="30.0" prefWidth="50.0" text="1 €" GridPane.columnIndex="1">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+						</Button>
+						<Button fx:id="btn05e" mnemonicParsing="false" onAction="#btn05eOnAction" prefHeight="30.0" prefWidth="50.0" text="0.50 €" GridPane.rowIndex="1">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+						</Button>
+						<Button fx:id="btn02e" mnemonicParsing="false" onAction="#btn02eOnAction" prefHeight="30.0" prefWidth="50.0" text="0.20 €" GridPane.columnIndex="1" GridPane.rowIndex="1">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+						</Button>
+						<Button fx:id="btn01e" mnemonicParsing="false" onAction="#btn01eOnAction" prefHeight="30.0" prefWidth="50.0" text="0.10 €" GridPane.rowIndex="2">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+						</Button>
+						<Button fx:id="btn005e" mnemonicParsing="false" onAction="#btn005eOnAction" prefHeight="30.0" prefWidth="50.0" text="0.05 €" GridPane.columnIndex="1" GridPane.rowIndex="2">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+						</Button>
+						<Button fx:id="btnDevolver" mnemonicParsing="false" onAction="#btnDevolverOnAction" prefHeight="35.0" prefWidth="86.0" text="DEVOLVER" GridPane.columnSpan="2" GridPane.rowIndex="3">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+						</Button>
+					</children>
+				</GridPane>
+				<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+					<children>
+						<TextField fx:id="txtSalidaTexto" alignment="CENTER" editable="false" prefHeight="103.0" prefWidth="288.0" style="-fx-background-color: none;">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</TextField>
+					</children>
+				</VBox>
+			</children>
+		</GridPane>
+	</right>
+</BorderPane>

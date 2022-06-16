@@ -1,0 +1,50 @@
+----------------------------------------------------------------------------
+Empleado(dni, nombre, apellido1, apellido2, fecha_nac, dirección, correo)
+	CP {dni}
+Proyecto(código, nombre)
+	CP {código}
+Presentación(código, explicación, fecha_presentación, fecha_salida)
+	CP {código}
+Presenta(dni, código_presentación, código_proyecto)
+	CP {dni, código_presentación}
+	CAlt {código_presentación, código_proyecto}
+	VNN {código_proyecto}
+	CAj {dni} Referencia a Empleado(dni)
+	CAj {código_presentación} Referencia a Presentación(código)
+	CAj {código_proyecto} Referencia a Proyecto(código)
+----------------------------------------------------------------------------
+Empleado(dni, nombre, apellido1, apellido2, fecha_nac, dirección, correo)
+	CP {dni}
+	CAj {código_proyecto} Referencia a Proyecto(código)
+Proyecto(código, nombre)
+	CP {código}
+----------------------------------------------------------------------------
+Empleado(dni, nombre, apellido1, apellido2, fecha_nac, dirección, correo)
+	CP {dni}
+	CAj {código_encargo} Referencia a Encargo(código)
+Encargo(código, detalles, fecha_límite, precio)
+	CP {código}
+----------------------------------------------------------------------------
+Encargo(código, dni_cliente, detalles, fecha_límite, precio)
+	CP {código}
+	VNN {dni_cliente}
+	CAj {dni_cliente} Referencia a Cliente(dni)
+Cliente(dni, nombre, apellido1, apellido2, fecha_nac, correo)
+	CP {dni}
+----------------------------------------------------------------------------
+Pedido(código, dni_cliente, fecha, cantidad, precio)
+	CP {código}
+	VNN {dni_cliente}
+	CAj {dni_cliente} Referencia a Cliente(dni)
+Cliente(dni, nombre, apellido1, apellido2, fecha_nac, correo)
+	CP {dni}
+----------------------------------------------------------------------------
+Pedido(código, fecha, cantidad, precio)
+	CP {código}
+Producto(código, nombre, explicación, precio)
+	CP {código}
+Compone(código_producto, código_pedido)
+	CP {código_producto, código_pedido}
+	CAj {código_producto} Referencia a Producto(código)
+	CAj {código_pedido} Referencia a Pedido(código)
+----------------------------------------------------------------------------

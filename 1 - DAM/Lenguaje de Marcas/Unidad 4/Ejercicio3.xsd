@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="matricula">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="personal">
+                    <xs:element name="dni" type="xs:string" pattern="[0-9]{8}[a-zA-Z]{1}"/>
+				    <xs:element name="nombre" type="xs:string"/>
+				    <xs:element name="titulacion" type="xs:string"/>
+				    <xs:element name="curso_academico" type="xs:string" pattern="[0-9]{4}/[0-9]{4}"/>
+                    <xs:element name="domicilios">
+                        <xs:element name="domicilio">
+                            <xs:element name="nombre" type="xs:string"/>
+						</xs:element>
+                    </xs:element>
+                </xs:element>
+				<xs:element name="pago">
+                    <xs:element name="tipo_matricula" type="xs:string"/>
+                </xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

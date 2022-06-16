@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="nota" maxOccurs="2">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="para" type="xs:string" maxLenght="25"/>
+				<xs:element name="de" type="xs:string" maxLenght="25"/>
+				<xs:element name="titulo" type="xs:string" maxLenght="25"/>
+				<xs:element name="contenido" type="xs:string" maxLenght="25"/>
+				<xs:element name="codigo" type="xs:string" pattern="[a-zA-Z]{1}, [0-9]{4}"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

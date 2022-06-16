@@ -1,0 +1,13 @@
+Dado el XML adjunto en la entrega diseña una plantilla .xsd que lo valide teniendo en cuenta:
+
+- El número máximo de notas es de 2.
+
+- Los elementos de las notas tienen que aparecer todos en orden indiferente.
+
+- La longitud máxima del contenido es de 25 carácteres.
+
+- El código empieza por letra mayuscula o minuscula y tiene 4dígitos a continuación.
+
+
+
+* presta atención a las extensiones de los ficheros. Deberíais tener un fichero .xml y otro .xsd

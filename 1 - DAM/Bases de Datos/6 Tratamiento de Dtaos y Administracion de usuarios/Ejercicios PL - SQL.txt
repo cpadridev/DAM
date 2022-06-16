@@ -1,0 +1,32 @@
+Indica cuales de estas declaraciones darían error y porque.
+DECLARE
+
+primera number:=5.0;
+
+siguiente number not null;
+
+fija constant varchar2(20);
+
+cadena varchar2;
+
+valor1 number not null:=4;
+
+varlor2 number:=valor1/2;
+
+valor3 number:=valor4+valor2;
+
+valor4 number:= default 5;
+
+cad varchar2(10);
+
+proximo valor1%TYPE;
+
+numero number(4,2):=150.3;
+
+CAd varchar2(12);
+
+cad2 varchar2(2):='HOLA';
+
+4num number;
+
+BEGIN

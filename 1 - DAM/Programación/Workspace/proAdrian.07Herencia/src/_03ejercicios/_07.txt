@@ -1,0 +1,6 @@
+No.
+Si.
+Si, en el test.
+Por que el atributo nombre es privado. Con protected.
+Que no se pueden modificar.
+No, simplemente imprimiría la dirección de memoria

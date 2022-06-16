@@ -1,0 +1,17 @@
+Crea un fichero .json que contenga la misma información que el fichero . xml de películas del proyecto en Git.
+
+Crea una clase Main que contenga los procedimientos y funciones necesarios para leer el fichero .json e imprimir por consola los datos.
+
+
+
+A entregar:
+
+- Clase java
+
+- Fichero .json
+
+- Captura de pantalla del resultado por consola
+
+
+
+*la entrega es INDIVIDUAL

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h3>Ejercicio 7</h3>
+    <form>
+        <label>Escribe tu nombre:</label>
+        <input type="text" name="nombre" size="10" required>
+        <br><br>
+        <label>Escribe tus apellidos:</label>
+        <input type="text" name="apellidos" size="30" required>
+        <br><br>
+        <label>Escribe tu email:</label>
+        <input type="email" name="correo" size="30" placeholder="example@example.com" required>
+        <br><br>
+        <label>Escribe tu contraseña:</label>
+        <input type="password" name="contraseña" size="30" required>
+        <br><br>
+        <label>Web Personal:</label>
+        <input type="url" name="url" placeholder="https://example.com" size="30" required>
+        <br><br>
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+    <br>
+    <h3>Ejercicio 8</h3>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" size="40" required>
+        <br><br>
+        <label>Año de nacimiento:</label>
+        <input type="number" name="nacimiento" maxlength="4" min="1900" max="2021" required>
+        <br><br>
+        <label>Sexo:</label>
+        <input type="radio" name="sexo">Hombre
+        <input type="radio" name="sexo">Mujer
+        <input type="radio" name="sexo" checked>Otro
+        <br><br>
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset" name="borrar" value="Borrar">
+    </form>
+    <br>
+    <h3>Ejercicio 9</h3>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Rellenar</legend>
+                <input type="radio" name="idioma" value="idiomaingles" checked>Inglés
+                <br>
+                <input type="radio" name="idioma" value="idiomaaleman">Alemán
+                <br>
+                <input type="radio" name="idioma" value="idiomafrances">Francés
+                <br><br>
+                <select name="conector" required>
+                    <option value="usb">USB</option>
+                    <option value="paralelo">Paralelo</option>
+                    <option value="ps2">PS2</option>
+                </select>
+                <br>
+                <label>Nombre</label>
+                <input type="text" name="nombre" required>
+                <br>
+                <label>Apellidos</label>
+                <input type="text" name="apellidos" required>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Indique sus preferencias</legend>
+                <select name="sexo" multiple required>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br>
+                <input type="checkbox" name="sexo" value="sexomujer">Mujer
+                <br>
+                <input type="checkbox" name="sexo" value="sexohombre">Hombre
+                <br>
+                <input type="checkbox" name="sexo" value="sexootro">Otro
+                <br><br>
+                <label>Elija una fecha:</label>
+                <input type="date" name="fecha" required>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+Dado el XML adjunto en la tarea diseña una plantilla .xsd que lo valide teniendo en cuenta:
+
+- DNI válidos(8 dígitos y letra).
+
+- Define un tipo simple para el código postal con una restricción de 5 dígitos. Usa ese tipo en la declaración del atributo codPostal.
+
+- El atributo tipo del elemento domicilio es obligatorio.
+
+- De cada persona se conocerá el nombre o el DNI.

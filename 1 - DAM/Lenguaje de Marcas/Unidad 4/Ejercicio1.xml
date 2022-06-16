@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nota xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Ejercicio1.xsd"> 
+    <para>Pedro</para> 
+    <de>Laura</de> 
+    <titulo>Recordatorio</titulo> 
+    <contenido>A las 7:00 pm en la puerta del teatro</contenido>
+    <codigo>C2233</codigo> 
+</nota>
+<nota> 
+    <para>Jaime</para>    
+    <contenido>A las 8:00 pm en la puerta del teatro</contenido>
+    <codigo>a1231</codigo>
+    <de>Susana</de> 
+    <titulo>Recordatorio</titulo> 
+</nota>  
